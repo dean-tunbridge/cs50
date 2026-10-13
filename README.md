@@ -2,9 +2,6 @@
 
 **My solutions and progress through Harvard's CS50x: Introduction to Computer Science.**
 
-[![CS50](https://img.shields.io/badge/Course-CS50x-red)](https://cs50.harvard.edu/x/)
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
-
 ---
 
 ## About
@@ -33,4 +30,3 @@ Learning about searching and sorting algorithms, recursion, and algorithm effici
 - [CS50x Problem Sets](https://cs50.harvard.edu/x/psets/)
 
 This repository documents my learning journey through CS50x.
-
