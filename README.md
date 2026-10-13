@@ -2,8 +2,6 @@
 
 **My solutions and progress through Harvard's CS50x: Introduction to Computer Science.**
 
----
-
 ## About
 
 This repository contains my solutions to the weekly problem sets and programming exercises completed throughout CS50x.
