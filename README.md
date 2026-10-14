@@ -35,6 +35,22 @@ Exploring arrays, strings, command-line arguments, and cryptography. The exercis
 
 Learning about searching and sorting algorithms, recursion, and algorithm efficiency. The problem sets focus on understanding how algorithms work and how different approaches affect performance.
 
+#### Problem sets from week 3:
+
+- Sort
+- Plurality
+- Runoff
+
+### Week 4 — Memory
+
+Learning about pointers, memory management, buffer overflows, and file I/O, including how computers store and manipulate data. Understanding memory allocation, preventing memory errors, and working with files and images.
+
+#### Problem sets from week 4:
+
+- Volume
+- Filter
+- Recover
+
 ## Resources
 
 - [CS50x Official Course](https://cs50.harvard.edu/x/)
