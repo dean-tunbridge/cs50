@@ -14,6 +14,13 @@ The goal is to build a strong foundation in computer science, improve my problem
 
 Introduction to C programming, covering variables, data types, conditionals, loops, and functions. The problem sets focus on applying these fundamentals to solve programming challenges.
 
+## Problem sets from week 1:
+
+- Mario-less
+- Mario-more
+- cash
+- credit
+
 ### Week 2 — Arrays
 
 Exploring arrays, strings, command-line arguments, and cryptography. The exercises build on the fundamentals of C while exploring how to work with collections of data and manipulate text.
