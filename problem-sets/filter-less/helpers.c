@@ -20,9 +20,20 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
     }
 }
 
+// Helper function for boundary checking
+int boundary_check(int colour)
+{
+    if (colour > 255)
+    {
+        colour = 255;
+    }
+    return colour;
+}
+
 // Convert image to sepia
 void sepia(int height, int width, RGBTRIPLE image[height][width])
 {
+
     // Loop over all pixels
     for (int i = 0; i < height; i++)
     {
@@ -37,22 +48,14 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
                                   .131 * image[i][j].rgbtBlue);
 
             // handle number exceeding 255 in calculation
-            if (sepiaRed > 255)
-            {
-                sepiaRed = 255;
-            }
-            if (sepiaGreen > 255)
-            {
-                sepiaGreen = 255;
-            }
-            if (sepiaBlue > 255)
-            {
-                sepiaBlue = 255;
-            }
+            sepiaRed = boundary_check(sepiaRed);
+            sepiaGreen = boundary_check(sepiaGreen);
+            sepiaBlue = boundary_check(sepiaBlue);
+
             // Update pixel values
-            image[i][j].rgbtBlue = sepiaBlue;
-            image[i][j].rgbtGreen = sepiaGreen;
             image[i][j].rgbtRed = sepiaRed;
+            image[i][j].rgbtGreen = sepiaGreen;
+            image[i][j].rgbtBlue = sepiaBlue;
         }
     }
 }
@@ -118,6 +121,14 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             new_image[i][j].rgbtBlue = blue_average;
             new_image[i][j].rgbtGreen = green_average;
             new_image[i][j].rgbtRed = red_average;
+        }
+    }
+
+    for (int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < width; j++)
+        {
+            image[i][j] = new_image[i][j];
         }
     }
 }
