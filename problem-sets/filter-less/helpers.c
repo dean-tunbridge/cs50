@@ -113,9 +113,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                 }
             }
             // Calculate averages for each colour
-            int blue_average = round(blue_count / surrounding_count);
-            int green_average = round(green_count / surrounding_count);
-            int red_average = round(red_count / surrounding_count);
+            int blue_average = round((float) blue_count / surrounding_count);
+            int green_average = round((float) green_count / surrounding_count);
+            int red_average = round((float) red_count / surrounding_count);
 
             // Add new RGB values to corresponding value in new_image array
             new_image[i][j].rgbtBlue = blue_average;
