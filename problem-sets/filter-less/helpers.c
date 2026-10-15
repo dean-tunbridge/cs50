@@ -34,13 +34,16 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
             int sepiaBlue = round(.272 * image[i][j].rgbtRed + .534 * image[i][j].rgbtGreen + .131 * image[i][j].rgbtBlue);
 
             // handle number exceeding 255 in calculation
-            if(sepiaRed > 255){
+            if(sepiaRed > 255)
+            {
                 sepiaRed = 255;
             }
-             if(sepiaGreen > 255){
+             if(sepiaGreen > 255)
+             {
                 sepiaGreen = 255;
             }
-             if(sepiaBlue > 255){
+             if(sepiaBlue > 255)
+             {
                 sepiaBlue = 255;
             }
             // Update pixel values
@@ -54,7 +57,19 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 // Reflect image horizontally
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
-    return;
+    // Loop over all pixels
+    for(int i = 0; i < height; i++)
+    {
+        for(int j = 0; j < width / 2; j++)
+        {
+            // Reverse each pixel in row
+            int opposite_pixel = width - 1 - j;
+            RGBTRIPLE stored_pixel = image[i][j];
+            image[i][j] = image[i][opposite_pixel];
+            image[i][opposite_pixel] = stored_pixel;
+
+        }
+    }
 }
 
 // Blur image
