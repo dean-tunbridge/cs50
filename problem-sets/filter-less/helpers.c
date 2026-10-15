@@ -75,5 +75,24 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-    return;
+     // Loop over all pixels
+    for(int i = 0; i < height; i++)
+    {
+        for(int j = 0; j < width / 2; j++)
+        {
+            // Get average of 9 pixels surrounding
+                              // Get average of pixels either side of current
+            int average_rgb = image[i][j - 1].rgbtBlue + image[i][j + 1].rgbtBlue +
+                              image[i][j - 1].rgbtGreen + image[i][j + 1].rgbtGreen +
+                              image[i][j - 1].rgbtRed + image[i][j + 1].rgbtRed +
+                              // Get average of pixels above current
+                              image[i - 1][j - 1].rgbtBlue + image[i - 1][j].rgbtBlue + image[i - 1][j + 1].rgbtBlue +
+                              image[i - 1][j - 1].rgbtGreen + image[i - 1][j].rgbtGreen + image[i - 1][j + 1].rgbtGreen +
+                              image[i - 1][j - 1].rgbtRed + image[i - 1][j].rgbtRed + image[i - 1][j + 1].rgbtRed +
+                              // TODO Get average of pixels below current //
+                              image[i - 1][j - 1].rgbtBlue + image[i - 1][j].rgbtBlue + image[i - 1][j + 1].rgbtBlue +
+                              image[i - 1][j - 1].rgbtGreen + image[i - 1][j].rgbtGreen + image[i - 1][j + 1].rgbtGreen +
+                              image[i - 1][j - 1].rgbtRed + image[i - 1][j].rgbtRed + image[i - 1][j + 1].rgbtRed +
+        }
+    }
 }
