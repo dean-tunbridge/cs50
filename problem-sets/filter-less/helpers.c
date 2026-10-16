@@ -123,7 +123,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
       new_image[i][j].rgbtRed = red_average;
     }
   }
-
+  // Replace original values with the blurred values
   for (int i = 0; i < height; i++)
   {
     for (int j = 0; j < width; j++)
