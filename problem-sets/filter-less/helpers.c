@@ -103,7 +103,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
           // Check for boundary
           if (i + row >= 0 && i + row < height && j + column >= 0 && j + column < width)
           {
-            // Add colours for each
+            // Add values for each
             blue_count += image[i + row][j + column].rgbtBlue;
             green_count += image[i + row][j + column].rgbtGreen;
             red_count += image[i + row][j + column].rgbtRed;
