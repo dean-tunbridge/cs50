@@ -128,6 +128,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
   {
     for (int j = 0; j < width; j++)
     {
+      // Replace original value with blurred value
       image[i][j] = new_image[i][j];
     }
   }
