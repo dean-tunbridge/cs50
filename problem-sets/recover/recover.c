@@ -52,13 +52,16 @@ int main(int argc, char *argv[])
     }
     if (img)
     {
-      // If there is an image, write
+      // If there is an image, write file
+      // (data, size, number, outptr)
       fwrite(buffer, 1, block_size, img);
     }
   }
+  // If there is an open image, close it
   if (img != NULL)
   {
     fclose(img);
   }
+  // Close memory card once loop has been completed
   fclose(card);
 }
