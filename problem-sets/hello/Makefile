@@ -3,8 +3,8 @@ CFLAGS = -Wall -Wextra
 CS50_DIR = ..
 FILE_NAME = hello
 
-$(FILE_NAME): $(FILE_NAME).c $(CS50_DIR)/cs50.c $(CS50_DIR)/cs50.h
-	$(CC) $(CFLAGS) -I$(CS50_DIR) $(FILE_NAME).c $(CS50_DIR)/cs50.c -o $(FILE_NAME)
+$(FILE_NAME): $(FILE_NAME).c ../cs50.c ../cs50.h
+	$(CC) $(CFLAGS) -I.. $(FILE_NAME).c ../cs50.c -o $(FILE_NAME)
 
 clean:
 	rm -f $(FILE_NAME)
