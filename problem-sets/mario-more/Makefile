@@ -1,6 +1,3 @@
-CC = gcc
-CFLAGS = -Wall -Wextra
-CS50_DIR = ..
 FILE_NAME = mario-more
 
 $(FILE_NAME): $(FILE_NAME).c ../cs50.c ../cs50.h
