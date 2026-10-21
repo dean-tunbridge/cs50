@@ -1,12 +1,18 @@
-height = int(input("Height: "))
+while True:
+    try:
+        height = int(input("Height: "))
+    except ValueError:
+        continue
 
-while height < 1 or height > 8:
-    height = int(input("Height: "))
+    if height < 1 or height > 8:
+        continue
+
+    break
 
 for row in range(height):
-    spaces = height - row
+    spaces = height - row - 1
 
-    for i in range(spaces + 1):
+    for i in range(spaces):
         print(" ", end="")
 
     for k in range(row + 1):
