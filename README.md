@@ -14,7 +14,7 @@ The goal is to build a strong foundation in computer science, improve my problem
 
 Introduction to C programming, covering variables, data types, conditionals, loops, and functions. The problem sets focus on applying these fundamentals to solve programming challenges.
 
-Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="50"/>
+Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="10"/>
 
 #### Problem sets from week 1:
 
