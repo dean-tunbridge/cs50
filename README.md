@@ -51,6 +51,15 @@ Learning about pointers, memory management, buffer overflows, and file I/O, incl
 - Filter
 - Recover
 
+### Week 5 — Data Structures
+
+Learning about abstract data types and data structures, including queues, stacks, linked lists, trees, binary search trees, hash tables, and tries. Understanding how data is organized, stored, and accessed efficiently to improve searching, sorting, and overall program performance.
+
+#### Problem sets from week 5:
+
+- Inheritance
+- Speller
+
 ## Resources
 
 - [CS50x Official Course](https://cs50.harvard.edu/x/)
