@@ -1,8 +1,6 @@
-from cs50 import get_int
-
 while True:
     try:
-       change = get_int("Change owed: ")
+       change = float(input("Change owed: "))
     except ValueError:
         continue
 
@@ -11,11 +9,14 @@ while True:
 
     break
 
+change = round(change * 100)
+
 coins = [25, 10, 5, 1]
 total = 0
 
 for coin in coins:
     total += change // coin
     change = change % coin
+
 
 print(total)
