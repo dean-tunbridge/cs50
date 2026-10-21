@@ -21,7 +21,7 @@ Introduction to C programming, covering variables, data types, conditionals, loo
 - Cash
 - Credit
 
-#### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="15"/>
+#### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="17.5"/>
 
 ### Week 2 — Arrays
 
@@ -33,7 +33,7 @@ Exploring arrays, strings, command-line arguments, and cryptography. The exercis
 - Readability
 - Caesar
 
-#### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="15"/>
+#### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="17.5"/>
 
 ### Week 3 — Algorithms
 
@@ -45,7 +45,7 @@ Learning about searching and sorting algorithms, recursion, and algorithm effici
 - Plurality
 - Runoff
 
-#### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="15"/>
+#### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="17.5"/>
 
 ### Week 4 — Memory
 
@@ -57,7 +57,7 @@ Learning about pointers, memory management, buffer overflows, and file I/O, incl
 - Filter
 - Recover
 
-#### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="15"/>
+#### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="17.5"/>
 
 ### Week 5 — Data Structures
 
@@ -68,7 +68,7 @@ Learning about abstract data types and data structures, including queues, stacks
 - Inheritance
 - Speller
 
-#### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="15"/>
+#### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="17.5"/>
 
 ## Resources
 
