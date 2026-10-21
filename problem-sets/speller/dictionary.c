@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <strings.h>
 
 // Represents a node in a hash table
 typedef struct node
@@ -27,7 +28,20 @@ int word_count = 0;
 bool check(const char *word)
 {
     // TODO
+    int index = hash(word);
+    node *cursor = table[index];
+
+    while(cursor != NULL){
+    if(strcasecmp(cursor->word, word) == 0)
+    {
+        return true;
+    } else
+    {
+        cursor = cursor->next;
+    }
+}
     return false;
+
 }
 
 // Hashes word to a number
@@ -74,7 +88,14 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
-    return 0;
+    if (word_count <= 0)
+    {
+        return 0;
+    }
+    else
+    {
+        return word_count;
+    }
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
