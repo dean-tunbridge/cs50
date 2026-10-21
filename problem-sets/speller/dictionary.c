@@ -11,8 +11,8 @@
 // Represents a node in a hash table
 typedef struct node
 {
-  char word[LENGTH + 1];
-  struct node *next;
+    char word[LENGTH + 1];
+    struct node *next;
 } node;
 
 // TODO: Choose number of buckets in hash table
@@ -27,82 +27,92 @@ int word_count = 0;
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
-  // TODO
-  int index = hash(word);
-  node *cursor = table[index];
+    // TODO
+    int index = hash(word);
+    node *cursor = table[index];
 
-  while (cursor != NULL)
-  {
-    if (strcasecmp(cursor->word, word) == 0)
+    while (cursor != NULL)
     {
-      return true;
+        if (strcasecmp(cursor->word, word) == 0)
+        {
+            return true;
+        }
+        else
+        {
+            cursor = cursor->next;
+        }
     }
-    else
-    {
-      cursor = cursor->next;
-    }
-  }
-  return false;
+    return false;
 }
 
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
-  // TODO: Improve this hash function
-  return toupper(word[0]) - 'A';
+    // TODO: Improve this hash function
+    return toupper(word[0]) - 'A';
 }
 
 // Loads dictionary into memory, returning true if successful, else false
 bool load(const char *dictionary)
 {
-  // Open the dictionary file
-  FILE *source = fopen(dictionary, "r");
-  if (source == NULL)
-  {
-    return false;
-  }
-  // Read each word in the file
-  char buffer[LENGTH + 1];
-
-  while (fscanf(source, "%s", buffer) == 1)
-  {
-    // Add each word to the hash table
-    node *new_node = malloc(sizeof(node));
-    if (new_node == NULL)
+    // Open the dictionary file
+    FILE *source = fopen(dictionary, "r");
+    if (source == NULL)
     {
-      fclose(source);
-      return false;
+        return false;
     }
-    strcpy(new_node->word, buffer);
-    int index = hash(buffer);
-    new_node->next = table[index];
-    table[index] = new_node;
-    word_count++;
-  }
+    // Read each word in the file
+    char buffer[LENGTH + 1];
 
-  // Close the dictionary file
-  fclose(source);
-  return true;
+    while (fscanf(source, "%s", buffer) == 1)
+    {
+        // Add each word to the hash table
+        node *new_node = malloc(sizeof(node));
+        if (new_node == NULL)
+        {
+            fclose(source);
+            return false;
+        }
+        strcpy(new_node->word, buffer);
+        int index = hash(buffer);
+        new_node->next = table[index];
+        table[index] = new_node;
+        word_count++;
+    }
+
+    // Close the dictionary file
+    fclose(source);
+    return true;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
 unsigned int size(void)
 {
-  // TODO
-  if (word_count <= 0)
-  {
-    return 0;
-  }
-  else
-  {
-    return word_count;
-  }
+    // TODO
+    if (word_count <= 0)
+    {
+        return 0;
+    }
+    else
+    {
+        return word_count;
+    }
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
-  // TODO
+    // TODO
 
-  return false;
+    for (int i = 0; i < N; i++)
+    {
+        node *cursor = table[i];
+        while (cursor != NULL)
+        {
+            node *tmp = cursor;
+            cursor = cursor->next;
+            free(tmp);
+        }
+    }
+    return true;
 }
