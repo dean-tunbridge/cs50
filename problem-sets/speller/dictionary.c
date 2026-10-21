@@ -20,6 +20,9 @@ const unsigned int N = 26;
 // Hash table
 node *table[N];
 
+// Init count for word count
+int word_count = 0;
+
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
@@ -45,6 +48,7 @@ bool load(const char *dictionary)
     }
     // Read each word in the file
     char buffer[LENGTH + 1];
+
     while (fscanf(source, "%s", buffer) == 1)
     {
         // Add each word to the hash table
@@ -58,6 +62,7 @@ bool load(const char *dictionary)
         int index = hash(buffer);
         new_node->next = table[index];
         table[index] = new_node;
+        word_count++;
     }
 
     // Close the dictionary file
