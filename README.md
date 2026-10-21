@@ -14,14 +14,14 @@ The goal is to build a strong foundation in computer science, improve my problem
 
 Introduction to C programming, covering variables, data types, conditionals, loops, and functions. The problem sets focus on applying these fundamentals to solve programming challenges.
 
-#### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="15"/>
-
 #### Problem sets from week 1:
 
 - Mario-less
 - Mario-more
 - Cash
 - Credit
+
+#### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="15"/>
 
 ### Week 2 — Arrays
 
@@ -33,6 +33,8 @@ Exploring arrays, strings, command-line arguments, and cryptography. The exercis
 - Readability
 - Caesar
 
+#### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="15"/>
+
 ### Week 3 — Algorithms
 
 Learning about searching and sorting algorithms, recursion, and algorithm efficiency. The problem sets focus on understanding how algorithms work and how different approaches affect performance.
@@ -42,6 +44,8 @@ Learning about searching and sorting algorithms, recursion, and algorithm effici
 - Sort
 - Plurality
 - Runoff
+
+#### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="15"/>
 
 ### Week 4 — Memory
 
@@ -53,6 +57,8 @@ Learning about pointers, memory management, buffer overflows, and file I/O, incl
 - Filter
 - Recover
 
+#### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="15"/>
+
 ### Week 5 — Data Structures
 
 Learning about abstract data types and data structures, including queues, stacks, linked lists, trees, binary search trees, hash tables, and tries. Understanding how data is organized, stored, and accessed efficiently to improve searching, sorting, and overall program performance.
@@ -61,6 +67,8 @@ Learning about abstract data types and data structures, including queues, stacks
 
 - Inheritance
 - Speller
+
+#### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="15"/>
 
 ## Resources
 
