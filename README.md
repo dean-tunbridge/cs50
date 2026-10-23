@@ -10,11 +10,11 @@ The goal is to build a strong foundation in computer science, improve my problem
 
 ## Weekly Breakdown
 
-### Week 1 — C
+### Week 1 - C
 
 Introduction to C programming, covering variables, data types, conditionals, loops, and functions. The problem sets focus on applying these fundamentals to solve programming challenges.
 
-#### Problem sets from week 1:
+#### Problem set from week 1:
 
 - Mario-less
 - Mario-more
@@ -23,11 +23,11 @@ Introduction to C programming, covering variables, data types, conditionals, loo
 
 #### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="16"/>
 
-### Week 2 — Arrays
+### Week 2 - Arrays
 
 Exploring arrays, strings, command-line arguments, and cryptography. The exercises build on the fundamentals of C while exploring how to work with collections of data and manipulate text.
 
-#### Problem sets from week 2:
+#### Problem set from week 2:
 
 - Scrabble
 - Readability
@@ -35,11 +35,11 @@ Exploring arrays, strings, command-line arguments, and cryptography. The exercis
 
 #### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="16"/>
 
-### Week 3 — Algorithms
+### Week 3 - Algorithms
 
 Learning about searching and sorting algorithms, recursion, and algorithm efficiency. The problem sets focus on understanding how algorithms work and how different approaches affect performance.
 
-#### Problem sets from week 3:
+#### Problem set from week 3:
 
 - Sort
 - Plurality
@@ -47,11 +47,11 @@ Learning about searching and sorting algorithms, recursion, and algorithm effici
 
 #### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="16"/>
 
-### Week 4 — Memory
+### Week 4 - Memory
 
 Learning about pointers, memory management, buffer overflows, and file I/O, including how computers store and manipulate data. Understanding memory allocation, preventing memory errors, and working with files and images.
 
-#### Problem sets from week 4:
+#### Problem set from week 4:
 
 - Volume
 - Filter
@@ -59,22 +59,22 @@ Learning about pointers, memory management, buffer overflows, and file I/O, incl
 
 #### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="16"/>
 
-### Week 5 — Data Structures
+### Week 5 - Data Structures
 
 Learning about abstract data types and data structures, including queues, stacks, linked lists, trees, binary search trees, hash tables, and tries. Understanding how data is organized, stored, and accessed efficiently to improve searching, sorting, and overall program performance.
 
-#### Problem sets from week 5:
+#### Problem set from week 5:
 
 - Inheritance
 - Speller
 
 #### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="16"/>
 
-### Week 6 — Python
+### Week 6 - Python
 
 Learning the fundamentals of Python programming, including functions, arguments, return values, variables, Boolean expressions, conditionals, loops, modules, and packages. Understanding how to write reusable code, control program flow, and organize programs into modules to improve readability, maintainability, and overall program structure.
 
-#### Problem sets from week 6:
+#### Problem set from week 6:
 
 - Mario
 - Cash
