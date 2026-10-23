@@ -70,6 +70,19 @@ Learning about abstract data types and data structures, including queues, stacks
 
 #### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="16"/>
 
+### Week 6 — Python
+
+Learning the fundamentals of Python programming, including functions, arguments, return values, variables, Boolean expressions, conditionals, loops, modules, and packages. Understanding how to write reusable code, control program flow, and organize programs into modules to improve readability, maintainability, and overall program structure.
+
+#### Problem sets from week 6:
+
+- Mario
+- Cash
+- Readability
+- DNA
+
+#### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png" alt="Python" width="16"/>
+
 ## Resources
 
 - [CS50x Official Course](https://cs50.harvard.edu/x/)
