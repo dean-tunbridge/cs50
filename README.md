@@ -37,6 +37,8 @@ Exploring arrays, strings, command-line arguments, and cryptography. The exercis
 
 #### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="16"/>
 
+---
+
 ### Week 3 - Algorithms
 
 Learning about searching and sorting algorithms, recursion, and algorithm efficiency. The problem sets focus on understanding how algorithms work and how different approaches affect performance.
@@ -48,6 +50,8 @@ Learning about searching and sorting algorithms, recursion, and algorithm effici
 - Runoff
 
 #### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="16"/>
+
+---
 
 ### Week 4 - Memory
 
@@ -61,6 +65,8 @@ Learning about pointers, memory management, buffer overflows, and file I/O, incl
 
 #### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="16"/>
 
+---
+
 ### Week 5 - Data Structures
 
 Learning about abstract data types and data structures, including queues, stacks, linked lists, trees, binary search trees, hash tables, and tries. Understanding how data is organized, stored, and accessed efficiently to improve searching, sorting, and overall program performance.
@@ -71,6 +77,8 @@ Learning about abstract data types and data structures, including queues, stacks
 - Speller
 
 #### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/c.png" alt="C" width="16"/>
+
+---
 
 ### Week 6 - Python
 
@@ -85,6 +93,8 @@ Learning the fundamentals of Python programming, including functions, arguments,
 
 #### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png" alt="Python" width="16"/>
 
+---
+
 ### Week 7 - SQL
 
 Introduction to SQL, covering tables, data types, statements, constraints, indexes, keywords, functions, and transactions. The problem sets focus on managing databases, querying and manipulating data, and understanding database security, including race conditions and SQL injection attacks.
@@ -96,6 +106,8 @@ Introduction to SQL, covering tables, data types, statements, constraints, index
 - Fiftyville
 
 #### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/sqlite.png" alt="SQLite" width="16"/>
+
+---
 
 ## Resources
 
