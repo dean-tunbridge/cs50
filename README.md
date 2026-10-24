@@ -83,6 +83,18 @@ Learning the fundamentals of Python programming, including functions, arguments,
 
 #### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png" alt="Python" width="16"/>
 
+### Week 7 - SQL
+
+Introduction to SQL, covering tables, data types, statements, constraints, indexes, keywords, functions, and transactions. The problem sets focus on managing databases, querying and manipulating data, and understanding database security, including race conditions and SQL injection attacks.
+
+### Problem set from week 7:
+
+- Songs
+- Movies
+- Fiftyville
+
+#### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/sqlite.png" alt="SQLite" width="16"/>
+
 ## Resources
 
 - [CS50x Official Course](https://cs50.harvard.edu/x/)
