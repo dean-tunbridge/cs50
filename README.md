@@ -10,7 +10,7 @@ The goal is to build a strong foundation in computer science, improve my problem
 
 ## Weekly Breakdown
 
-### Week 1 - C
+### **Week 1 - C**
 
 Introduction to C programming, covering variables, data types, conditionals, loops, and functions. The problem sets focus on applying these fundamentals to solve programming challenges.
 
