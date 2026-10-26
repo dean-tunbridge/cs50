@@ -109,6 +109,20 @@ Introduction to SQL, covering tables, data types, statements, constraints, index
 
 ---
 
+### Week 8 – HTML, CSS, JavaScript
+
+Introduction to web development, covering the internet, routers, TCP/IP, DNS, HTTP, URLs, GET and POST requests, HTML tags and attributes, servers, regular expressions, CSS properties and selectors, frameworks, and JavaScript variables, conditionals, loops, and events. The problem sets focus on building interactive web pages, styling content, handling user interactions, and understanding how websites communicate with servers.
+
+### Problem set from Week 8:
+
+- Homepage
+- Trivia
+
+#### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png" alt="HTML" width="16"/>
+
+<img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png" alt="CSS" width="16"/>
+<img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png" alt="JS" width="16"/>
+
 ## Resources
 
 - [CS50x Official Course](https://cs50.harvard.edu/x/)
