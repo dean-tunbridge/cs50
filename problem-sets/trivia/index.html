@@ -8,22 +8,38 @@
     <link href="styles.css" rel="stylesheet" />
     <title>Trivia!</title>
     <script>
-      document.addEventListener('DOMcontentLoaded', function () {
-        // CORRECT
+      document.addEventListener('DOMContentLoaded', function () {
+        // CORRECT //
         let correct = document.querySelector('.correct')
+
         correct.addEventListener('click', () => {
           correct.style.backgroundColor = 'green'
           document.querySelector('#response-multiple').innerHTML = 'Correct!'
         })
-        // INCORRECT
-        let incorrect_answers = document.querySelector('.incorrect')
-        for (let i = 0; i < incorrect.length; i++) {
+
+        // INCORRECT //
+        let incorrect_answers = document.querySelectorAll('.incorrect')
+
+        for (let i = 0; i < incorrect_answers.length; i++) {
           incorrect_answers[i].addEventListener('click', () => {
             incorrect_answers[i].style.backgroundColor = 'red'
             document.querySelector('#response-multiple').innerHTML =
-              'incorrect!'
+              'Incorrect!'
           })
         }
+
+        // FREE RESPONSE //
+        document.querySelector('#check').addEventListener('click', () => {
+          let input = document.querySelector('input')
+
+          if (input.value === 'colombia') {
+            input.style.backgroundColor = 'green'
+            document.querySelector('#response-free').innerHTML = 'Correct!'
+          } else {
+            input.style.backgroundColor = 'red'
+            document.querySelector('#response-free').innerHTML = 'Incorrect!'
+          }
+        })
       })
     </script>
   </head>
