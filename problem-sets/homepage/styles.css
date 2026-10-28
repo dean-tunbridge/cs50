@@ -59,6 +59,14 @@
   border-left: 4px solid var(--green-highlight);
 }
 
+.league-table td.relegation:first-child {
+  border-left: 4px solid var(--highlight-secondary);
+}
+
+.league-table td.play-off:first-child {
+  border-left: 4px solid var(--bg-secondary);
+}
+
 .league-table .col-position {
   width: 50px;
 }
