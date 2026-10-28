@@ -1,0 +1,26 @@
+HTML TAGS USED: <ul>, <li>, <a>, <div>, <h1>, <h3>, <table>, <thead>, <tbody>, <tr>, <th>, <tr>
+
+I used a <ul> tag with <li> tags inside to create my navbar. I used bootstrap buttons to style these elements. 
+
+I then used <a> tags for eac link with the href set to that html file for navigation.
+
+In my index file I created 4 <div> combined with some javascript to essentially import each of my pages into the index as you would in a React project for example.
+
+I used mainly <h1> and <h3> tags in this project as it made sense with what I was doing. Each header was <h1> where as sub headings were <h3>
+
+I wanted to build some tables as I haven't used them much so i made a football league table using <table>.
+I used <thead>, <tbody>, <tr> (table row), <th> (table header), <tr> (table row).
+
+CSS PROPERTIES USED: custom colour classes, *(universal selector), background-color, padding, display
+
+I created a set of custom colour classes for the project to prevent repeating or hardcoding values. This meant I could also change this with one line of code instead of searching the file for every instance of that colour.
+
+I used the universal selector to add padding and margin to the bottom of all elements as it made it easier than doing it to all elements. This is probably not best practice, but for this small project I think its fine.
+
+I used background-color, and color properties to set the background colour and colour of elements. Using the custom colour classes I created made it easy to keep the project styling cohesive.
+
+I used padding and margin to set internal (padding) and external(margin) spacing on elements.
+
+I used display flex to help with controlling alignment of the tables, and for the headings and navbar to make sure the buttons are in a column. 
+
+JAVASCRIPT USED: I used javascript to setup a fetch to retrieve each of my individual files and render them on the index page. I wanted to make something similar in idea to how React components work. I used bootstrap for the buttons on my navbar.
