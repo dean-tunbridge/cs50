@@ -7,3 +7,50 @@
 .heading h1 {
   color: blue;
 }
+
+/* STANDINGS PAGE CSS */
+
+.league-table {
+  width: 100%;
+  font-size: 16px;
+  color: black;
+}
+
+.league-table th {
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  padding: 16px 8px;
+}
+
+.league-table td {
+  padding: 12px 8px;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.league-table .team-name {
+  text-align: left;
+  font-weight: bold;
+}
+
+.league-table .points {
+  font-weight: bold;
+  color: white;
+}
+
+.league-table .champions-league td:first-child {
+  border-left: 4px solid greenyellow;
+}
+
+.league-table .col-position {
+  width: 50px;
+}
+
+.league-table .col-team {
+  text-align: left;
+}
+
+.league-table .col-points {
+  width: 60px;
+}
