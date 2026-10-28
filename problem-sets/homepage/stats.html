@@ -19,12 +19,50 @@
   <body>
     <div id="header-loader"></div>
     <h1 class="heading">Stats</h1>
-
-    <h3>Top Scorers</h3>
-
-    <h3>Assists</h3>
-
-    <h3>Clean Sheets</h3>
+    <div class="table-responsive">
+      <table class="stats-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="col-position">#</th>
+            <th class="col-position">Goals</th>
+            <th class="col-team">Club</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td class="player-name">Niclas Fullkrug</td>
+            <td class="points">8</td>
+            <td class="team-name">Werder Bremen</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td class="player-name">Michael Olise</td>
+            <td class="points">6</td>
+            <td class="team-name">BAyern Munich</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td class="player-name">Patrik Schick</td>
+            <td class="points">6</td>
+            <td class="team-name">Bayer Leverkusen/td></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td class="player-name">Phillip Tietz</td>
+            <td class="points">5</td>
+            <td class="team-name">Mainz 05</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td class="player-name">Younes Ebnoutalib</td>
+            <td class="points">5</td>
+            <td class="team-name">Frankfurt</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
   <script>
     fetch('header.html')
