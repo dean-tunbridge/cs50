@@ -1,3 +1,8 @@
+/* CUSTOM COLOUR CLASSES */
+:root {
+  --bundesliga-red: #d10214;
+}
+
 .heading {
   background-color: aqua;
   padding: 20px;
