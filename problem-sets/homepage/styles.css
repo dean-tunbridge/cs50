@@ -29,6 +29,7 @@
   font-size: 16px;
   color: var(--text-primary);
   background-color: var(--table-primary);
+  margin: 0 auto;
 }
 
 .league-table th {
@@ -84,9 +85,9 @@
 }
 
 .league-table .goal-diff.positive {
-  color: green;
+  color: var(--green-highlight);
 }
 
 .league-table .goal-diff.negative {
-  color: red;
+  color: var(--highlight-primary);
 }
