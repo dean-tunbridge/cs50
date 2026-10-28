@@ -17,7 +17,36 @@
   <body>
     <div id="header-loader"></div>
     <h1>Bundo</h1>
+    <div id="scores-loader"></div>
+    <div id="standings-loader"></div>
+    <div id="stats-loader"></div>
     <script>
+      // FETCH HEADER //
+      fetch('header.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('header-loader').innerHTML = data
+        })
+
+      // FETCH SCORES //
+      fetch('header.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('header-loader').innerHTML = data
+        })
+      // FETCH SCORES //
+      fetch('header.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('header-loader').innerHTML = data
+        })
+      // FETCH STANDINGS //
+      fetch('header.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('header-loader').innerHTML = data
+        })
+      // FETCH STATS //
       fetch('header.html')
         .then((response) => response.text())
         .then((data) => {
