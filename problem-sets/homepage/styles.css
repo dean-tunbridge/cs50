@@ -10,10 +10,29 @@
   --green-highlight: #5ce65c;
 }
 
-.heading {
+.nav {
   background-color: var(--bg-primary);
   padding: 20px;
   display: flex;
+}
+
+.nav h1 {
+  color: var(--text-primary);
+}
+
+.heading {
+  color: var(--bg-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
 
 .heading h1 {

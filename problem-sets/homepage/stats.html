@@ -13,17 +13,24 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"></script>
     <link href="styles.css" rel="stylesheet" />
-    <title>Stats</title>
+    <title>Teams</title>
   </head>
+
   <body>
     <div id="header-loader"></div>
-    <h1>Stats</h1>
-    <script>
-      fetch('header.html')
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById('header-loader').innerHTML = data
-        })
-    </script>
+    <h1 class="heading">Stats</h1>
+
+    <h3>Top Scorers</h3>
+
+    <h3>Assists</h3>
+
+    <h3>Clean Sheets</h3>
   </body>
+  <script>
+    fetch('header.html')
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById('header-loader').innerHTML = data
+      })
+  </script>
 </html>
