@@ -1,3 +1,9 @@
 .heading {
   background-color: aqua;
+  padding: 20px;
+  display: flex;
+}
+
+.heading h1 {
+  color: blue;
 }
