@@ -17,7 +17,7 @@
 
 .nav {
   background-color: var(--bg-primary);
-  padding: 20px;
+  padding-top: 20px;
   display: flex;
 }
 
