@@ -1,6 +1,11 @@
 /* CUSTOM COLOUR CLASSES */
 :root {
   --bundesliga-red: #d10214;
+  --bg-primary: #2b2d42;
+  --bg-secondary: #8d99ae;
+  --text-primary: #edf2f4;
+  --highlight-primary: #ef233c;
+  --highlight-secondary: #d90429;
 }
 
 .heading {
