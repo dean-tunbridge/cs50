@@ -172,3 +172,7 @@ h3 {
   white-space: nowrap;
   width: 100px;
 }
+
+.score {
+  font-weight: 600;
+}
