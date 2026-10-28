@@ -13,6 +13,7 @@
 
 .league-table {
   width: 100%;
+  max-width: 1200px;
   font-size: 16px;
   color: black;
   background-color: white;
@@ -42,7 +43,7 @@
   color: black;
 }
 
-.league-table .champions-league td:first-child {
+.league-table td.champions-league:first-child {
   border-left: 4px solid greenyellow;
 }
 
