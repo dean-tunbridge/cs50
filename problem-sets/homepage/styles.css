@@ -1,21 +1,23 @@
 /* CUSTOM COLOUR CLASSES */
 :root {
-  --bundesliga-red: #d10214;
   --bg-primary: #2b2d42;
   --bg-secondary: #8d99ae;
   --text-primary: #edf2f4;
+  --table-primary: #101119;
   --highlight-primary: #ef233c;
   --highlight-secondary: #d90429;
+  --bundesliga-red: #d10214;
+  --green-highlight: #5ce65c;
 }
 
 .heading {
-  background-color: aqua;
+  background-color: var(--bg-primary);
   padding: 20px;
   display: flex;
 }
 
 .heading h1 {
-  color: blue;
+  color: var(--text-primary);
   margin: 0;
 }
 
@@ -25,13 +27,13 @@
   width: 100%;
   max-width: 1200px;
   font-size: 16px;
-  color: black;
-  background-color: white;
+  color: var(--text-primary);
+  background-color: var(--table-primary);
 }
 
 .league-table th {
-  background-color: darkblue;
-  color: white;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   text-align: center;
   padding: 16px 8px;
   white-space: nowrap;
@@ -40,7 +42,7 @@
 .league-table td {
   padding: 12px 8px;
   text-align: center;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid var(--bg-secondary);
 }
 
 .league-table .team-name {
@@ -50,11 +52,11 @@
 
 .league-table .points {
   font-weight: bold;
-  color: black;
+  color: var(--text-primary);
 }
 
 .league-table td.champions-league:first-child {
-  border-left: 4px solid greenyellow;
+  border-left: 4px solid var(--green-highlight);
 }
 
 .league-table .col-position {
