@@ -110,3 +110,28 @@ h3 {
 .league-table .goal-diff.negative {
   color: var(--highlight-primary);
 }
+
+/* STATS PAGE CSS*/
+
+.stats-table {
+  width: 100%;
+  max-width: 1200px;
+  font-size: 16px;
+  color: var(--text-primary);
+  background-color: var(--table-primary);
+  margin: 0 auto;
+}
+
+.stats-table th {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  text-align: center;
+  padding: 16px 8px;
+  white-space: nowrap;
+}
+
+.stats-table td {
+  padding: 12px 8px;
+  text-align: center;
+  border-bottom: 1px solid var(--bg-secondary);
+}
