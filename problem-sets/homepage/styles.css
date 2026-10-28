@@ -135,3 +135,40 @@ h3 {
   text-align: center;
   border-bottom: 1px solid var(--bg-secondary);
 }
+
+.stats-table td.winner:first-child {
+  border-left: 4px solid var(--green-highlight);
+}
+
+/* RESULTS PAGE CSS */
+
+.results-table {
+  width: 100%;
+  max-width: 1200px;
+  font-size: 16px;
+  color: var(--text-primary);
+  background-color: var(--table-primary);
+  margin: 0 auto;
+  table-layout: fixed;
+}
+
+.results-table th {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  text-align: center;
+  padding: 16px 8px;
+  white-space: nowrap;
+}
+
+.results-table td {
+  padding: 12px 8px;
+  text-align: center;
+  border-bottom: 1px solid var(--bg-secondary);
+}
+
+.results-table .score,
+.results-table .result {
+  text-align: center;
+  white-space: nowrap;
+  width: 100px;
+}
