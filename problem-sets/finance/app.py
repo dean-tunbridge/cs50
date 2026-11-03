@@ -108,7 +108,6 @@ def quote():
     """Get stock quote."""
     return apology("TODO")
 
-
 @app.route("/register", methods=["GET", "POST"])
 def register():
     """Register user"""
@@ -118,9 +117,9 @@ def register():
         confirmation = request.form.get("confirmation")
         # Check for valid entries for each value in form
         if not username:
-            return apology("Please enter a username", 403)
+            return apology("Please enter a username")
         elif not password:
-            return apology("Please enter a password", 403)
+            return apology("Please enter a password")
         elif not confirmation:
             return apology("Please confirm password")
         elif password != confirmation:
@@ -138,7 +137,7 @@ def register():
             session["user_id"] = current_user[0]["id"]
             return redirect('/')
         except:
-            return apology("Username already in use")
+            return apology("Username already in use", 200)
     else:
         return render_template("register.html")
 
