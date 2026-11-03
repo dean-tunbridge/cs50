@@ -116,15 +116,26 @@ def register():
         username = request.form.get("username")
         password = request.form.get("password")
         confirm_password = request.form.get("confirm_password")
-        
-    if not username:
-      return apology("Please enter a username")
-    elif not password:
-      return apology("Please enter a password")
-    elif password != confirm_password:
-      return apology("Please ensure passwords match")
-
-    return apology("TODO")
+    # Check for valid entries for each value in form
+        if not username:
+          return apology("Please enter a username")
+        elif not password:
+          return apology("Please enter a password")
+        elif not confirm_password:
+          return apology("Please confirm password")
+        elif password != confirm_password:
+          return apology("Please ensure passwords match")
+    # Generate hashed password
+        password_hash = generate_password_hash(password)
+    # Insert new user into database
+        try:
+          db.execute("INSERT INTO users (username, password_hash) VALUES (?, ?)", username, password_hash)
+          return redirect('/login')
+        except:
+          return apology("Username already in use")
+    else:
+        return render_template("register.html")
+   
 
 
 @app.route("/sell", methods=["GET", "POST"])
