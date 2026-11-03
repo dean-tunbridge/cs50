@@ -116,7 +116,7 @@ def quote():
       if not stock:
         return apology("Invalid stock code")
       
-      return render_template("quoted.html")
+      return render_template("quoted.html", stock=stock)
       
     elif request.method == "GET":
       render_template("quote.html")  
