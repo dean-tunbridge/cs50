@@ -108,13 +108,15 @@ def quote():
     """Get stock quote."""
     if request.method == "POST":
       symbol = request.form.get("symbol")
+      # Check valid stock code
       if not symbol:
         return apology("Please enter a stock symbol")
-      
+      # Use lookup helper function
       stock = lookup(symbol)
       
       if not stock:
         return apology("Invalid stock code")
+      # Use usd helper to fix formatting for stock price and convert to USD
       usd_price = usd(stock["price"])
       return render_template("quoted.html", stock=stock, usd_price=usd_price)
       
