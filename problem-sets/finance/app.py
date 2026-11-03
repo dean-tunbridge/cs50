@@ -118,21 +118,22 @@ def register():
         confirm_password = request.form.get("confirm_password")
     # Check for valid entries for each value in form
         if not username:
-          return apology("Please enter a username")
+            return apology("Please enter a username")
         elif not password:
-          return apology("Please enter a password")
+            return apology("Please enter a password")
         elif not confirm_password:
-          return apology("Please confirm password")
+            return apology("Please confirm password")
         elif password != confirm_password:
-          return apology("Please ensure passwords match")
+            return apology("Please ensure passwords match")
     # Generate hashed password
-        password_hash = generate_password_hash(password)
+        hash = generate_hash(password)
     # Insert new user into database
         try:
-          db.execute("INSERT INTO users (username, password_hash) VALUES (?, ?)", username, password_hash)
-          return redirect('/login')
+            db.execute("INSERT INTO users (username, hash) VALUES (?, ?)",
+                       username, hash)
+            return redirect('/login')
         except:
-          return apology("Username already in use")
+            return apology("Username already in use")
     else:
         return render_template("register.html")
    
