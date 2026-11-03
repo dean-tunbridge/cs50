@@ -109,22 +109,21 @@ def quote():
     return apology("TODO")
 
 
-
 @app.route("/register", methods=["GET", "POST"])
 def register():
     """Register user"""
     if request.method == "POST":
         username = request.form.get("username")
         password = request.form.get("password")
-        confirm_password = request.form.get("confirm_password")
+        confirmation = request.form.get("confirmation")
         # Check for valid entries for each value in form
         if not username:
             return apology("Please enter a username", 403)
         elif not password:
             return apology("Please enter a password", 403)
-        elif not confirm_password:
+        elif not confirmation:
             return apology("Please confirm password")
-        elif password != confirm_password:
+        elif password != confirmation:
             return apology("Please ensure passwords match")
         # Generate hashed password
         hash = generate_password_hash(password)
@@ -142,6 +141,7 @@ def register():
             return apology("Username already in use")
     else:
         return render_template("register.html")
+
    
 
 
