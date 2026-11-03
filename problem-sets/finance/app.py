@@ -119,9 +119,9 @@ def register():
         confirm_password = request.form.get("confirm_password")
         # Check for valid entries for each value in form
         if not username:
-            return apology("Please enter a username")
+            return apology("Please enter a username", 403)
         elif not password:
-            return apology("Please enter a password")
+            return apology("Please enter a password", 403)
         elif not confirm_password:
             return apology("Please confirm password")
         elif password != confirm_password:
