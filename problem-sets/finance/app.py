@@ -126,7 +126,7 @@ def register():
         elif password != confirm_password:
             return apology("Please ensure passwords match")
     # Generate hashed password
-        hash = generate_hash(password)
+        hash = generate_password_hash(password)
     # Insert new user into database
         try:
             db.execute("INSERT INTO users (username, hash) VALUES (?, ?)",
