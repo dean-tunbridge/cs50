@@ -212,4 +212,33 @@ def register():
 @login_required
 def sell():
     """Sell shares of stock"""
-    return apology("TODO")
+    if request.method == "POST":
+      # Get user id
+      user_id = session["user_id"]
+      # Get symbol
+      symbol = request.form.get("symbol")
+      # Get shares
+      shares = int(request.form.get("shares"))
+
+      # check if they have shares
+      if shares <= 0:
+          return apology("Share must be positive number")
+
+      # Get stock price
+      stock_price = lookup(symbol)["price"]
+      # Get stock name
+      stock_name = lookup(symbol)["name"]
+      # Get current amount of shares
+      curr_shares = db.execute("SELECT shares FROM transactions WHERE user_id = ? AND symbol =? GROUP BY symbol", user_id, symbol)[0]["shares"]
+
+      # Check if user has enough shares to sell
+      if curr_shares < shares:
+          return apology("You don't have enough shares to sell")
+
+      # Get current cash
+      curr_cash = db.execute("SELECT cash FROM users WHERE user_id = ?, user_id")[0]["cash"]
+
+
+      # update users cash
+      price = shares * stock_price
+      db.execute("UPDATE users SET cash = ? WHERE id = ?", curr_cash + price, user_id)
