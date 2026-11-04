@@ -64,15 +64,18 @@ def buy():
     if request.method == "POST":
 
         # Get stock symbol and convert to uppercase
-        symbol = request.form.get("symbol").upper()
-        stock = lookup(symbol)
+        symbol = request.form.get("symbol")
 
         # Check for valid symbol or empty submit
         if not symbol:
             return apology("Please Enter a Stock")
-
+          
+        # Convert to uppercase after checking for valid symbol  
+        symbol = symbol.upper()
+        stock = lookup(symbol)
+                  
         # Check for valid stock
-        elif not stock:
+        if not stock:
             return apology("Invalid Stock")
 
         # Check share is an integer
