@@ -89,7 +89,7 @@ def buy():
         user_id = session["user_id"]
 
         # Use user id to get cash value from db
-        cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)
+        cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
 
         stock_price = stock["price"]
         stock_name = stock["name"]
