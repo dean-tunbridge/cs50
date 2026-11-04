@@ -267,13 +267,16 @@ def sell():
         symbol = request.form.get("symbol")
 
         # Get shares
-        shares = int(request.form.get("shares"))
+        try:
+            shares = int(request.form.get("shares"))
+        except:
+            return apology("Share must be a number")
 
         # Check if they have shares
         if shares <= 0:
             return apology("Share must be positive number")
           
-          # Get stock symbol and convert to uppercase
+        # Get stock symbol and convert to uppercase
         symbol = request.form.get("symbol").upper()
         stock = lookup(symbol)
           
