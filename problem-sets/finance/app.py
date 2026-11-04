@@ -72,9 +72,14 @@ def buy():
         if cash < total_sum:
             return apology("Insufficient funds for transaction")
         else:
+            # Update db with new cash total after purchasing stock
             db.execute("UPDATE users SET cash = ? WHERE id = ?", cash - total_sum, user_id)
+            # Add transaction to transaction table
+            db.execute("INSERT INTO transactions WHERE user_id, name, shares,price, type, symbol) VALUES (? ,? ,? ,? ,? ,?)",
+                       user_id, stock_name, shares, stock_price, "buy", symbol
+                       )
     else:
-      return render_template("buy.html")
+        return render_template("buy.html")
 
 @app.route("/history")
 @login_required
