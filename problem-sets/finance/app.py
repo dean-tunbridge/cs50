@@ -277,19 +277,19 @@ def sell():
         symbol = request.form.get("symbol").upper()
         stock = lookup(symbol)
           
-                  # Check for valid symbol or empty submit
+        # Check for valid symbol or empty submit
         if not symbol:
             return apology("Please Enter a Stock")
           
-                  # Check for valid stock
+        # Check for valid stock
         elif not stock:
             return apology("Invalid Stock")
 
         # Get stock price
-        stock_price = lookup(symbol)["price"]
+        stock_price = stock["price"]
 
         # Get stock name
-        stock_name = lookup(symbol)["name"]
+        stock_name = stock["name"]
 
         # Get current amount of shares
         curr_shares = db.execute(
