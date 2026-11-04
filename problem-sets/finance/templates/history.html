@@ -16,7 +16,7 @@ main %}
       <td>{{ transaction["symbol"].upper() }}</td>
       <td>{{ transaction["type"] }}</td>
       <td>{{ transaction["shares"] }}</td>
-      <td>{{ usd(tr["price"]) }}</td>
+      <td>{{ usd(transaction["price"]) }}</td>
       <td>{{ transaction["time"] }}</td>
     </tr>
     {% endfor %}
