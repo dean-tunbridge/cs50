@@ -51,7 +51,8 @@ def index():
     # Get total
     total = cash
     for stock in stocks:
-        total += stock["price"] * stock["SUM(shares)"]
+        curr_stock = lookup(stock["symbol"])
+        total += curr_stock["price"] * stock["SUM(shares)"]
 
     return render_template("index.html", stocks=stocks, cash=cash, total=total, usd=usd)
 
@@ -200,7 +201,7 @@ def quote():
         return render_template("quoted.html", stock=stock, usd_price=usd_price)
 
     elif request.method == "GET":
-        render_template("quote.html")
+        return render_template("quote.html")
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -283,7 +284,7 @@ def sell():
             "SELECT shares FROM transactions WHERE user_id = ? AND symbol = ? GROUP BY symbol",
             user_id,
             symbol
-        )[0]["shares"]
+        )[0]["SUM(shares)"]
 
         # Check if user has enough shares to sell
         if curr_shares < shares:
@@ -291,7 +292,7 @@ def sell():
 
         # Get current cash
         curr_cash = db.execute(
-            "SELECT cash FROM users WHERE user_id = ?",
+            "SELECT cash FROM users WHERE id = ?",
             user_id
         )[0]["cash"]
 
