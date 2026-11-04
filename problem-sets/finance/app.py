@@ -241,7 +241,7 @@ def sell():
       db.execute("UPDATE users SET cash = ? WHERE id = ?", curr_cash + price, user_id)
 
       db.execute("INSERT INTO transactions (user_id, name, shares,price, type, symbol) VALUES (? ,? ,? ,? ,? ,?)",
-                             user_id, stock_name, shares, stock_price, "buy", symbol
+                             user_id, stock_name, -shares, stock_price, "sell", symbol
                              )
 
     else:
