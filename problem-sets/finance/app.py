@@ -117,6 +117,8 @@ def buy():
                 "buy",
                 symbol
             )
+            
+            return redirect("/")
 
     else:
         return render_template("buy.html")
