@@ -272,6 +272,18 @@ def sell():
         # Check if they have shares
         if shares <= 0:
             return apology("Share must be positive number")
+          
+          # Get stock symbol and convert to uppercase
+        symbol = request.form.get("symbol").upper()
+        stock = lookup(symbol)
+          
+                  # Check for valid symbol or empty submit
+        if not symbol:
+            return apology("Please Enter a Stock")
+          
+                  # Check for valid stock
+        elif not stock:
+            return apology("Invalid Stock")
 
         # Get stock price
         stock_price = lookup(symbol)["price"]
