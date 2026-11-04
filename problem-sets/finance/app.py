@@ -87,11 +87,12 @@ def buy():
             # Update db with new cash total after purchasing stock
             db.execute("UPDATE users SET cash = ? WHERE id = ?", cash - total_sum, user_id)
             # Add transaction to transaction table
-            db.execute("INSERT INTO transactions WHERE user_id, name, shares,price, type, symbol) VALUES (? ,? ,? ,? ,? ,?)",
+            db.execute("INSERT INTO transactions (user_id, name, shares,price, type, symbol) VALUES (? ,? ,? ,? ,? ,?)",
                        user_id, stock_name, shares, stock_price, "buy", symbol
                        )
     else:
         return render_template("buy.html")
+
 
 @app.route("/history")
 @login_required
@@ -155,22 +156,20 @@ def logout():
 def quote():
     """Get stock quote."""
     if request.method == "POST":
-      symbol = request.form.get("symbol")
-      # Check valid stock code
-      if not symbol:
-        return apology("Please enter a stock symbol")
-      # Use lookup helper function
-      stock = lookup(symbol)
-      
-      if not stock:
-        return apology("Invalid stock code")
-      # Use usd helper to fix formatting for stock price and convert to USD
-      usd_price = usd(stock["price"])
-      return render_template("quoted.html", stock=stock, usd_price=usd_price)
-      
+        symbol = request.form.get("symbol")
+        if not symbol:
+            return apology("Please enter a stock symbol")
+
+        stock = lookup(symbol)
+
+        if not stock:
+            return apology("Invalid stock code")
+        usd_price = usd(stock["price"])
+        return render_template("quoted.html", stock=stock, usd_price=usd_price)
+
     elif request.method == "GET":
-      render_template("quote.html")  
-    
+        render_template("quote.html")
+
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -196,16 +195,14 @@ def register():
                        username, hash)
             # Login as current user
             current_user = db.execute(
-            "SELECT id FROM users WHERE username = ?", request.form.get("username")
-             )
+                "SELECT id FROM users WHERE username = ?", request.form.get("username")
+            )
             session["user_id"] = current_user[0]["id"]
             return redirect('/')
         except:
             return apology("Username already in use", 200)
     else:
         return render_template("register.html")
-
-   
 
 
 @app.route("/sell", methods=["GET", "POST"])
@@ -242,3 +239,14 @@ def sell():
       # update users cash
       price = shares * stock_price
       db.execute("UPDATE users SET cash = ? WHERE id = ?", curr_cash + price, user_id)
+
+      db.execute("INSERT INTO transactions (user_id, name, shares,price, type, symbol) VALUES (? ,? ,? ,? ,? ,?)",
+                             user_id, stock_name, shares, stock_price, "buy", symbol
+                             )
+
+    else:
+    # Get user id
+     user_id = session["user_id"]
+    # Get symbols
+     symbols = db.execute("SELECT symbol FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
+     return render_template("sell.html", symbols=symbols)
