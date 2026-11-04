@@ -4,31 +4,22 @@ main %}
   <thead>
     <tr>
       <th>Symbol</th>
-      <th>Name</th>
+      <th>Type</th>
       <th>Shares</th>
       <th>Price</th>
-      <th>Total</th>
+      <th>Time</th>
     </tr>
   </thead>
   <tbody>
-    {% for stock in stocks %}
+    {% for transaction in transactions %}
     <tr>
-      <td>{{ stock["symbol"] }}</td>
-      <td>{{ stock["name"] }}</td>
-      <td>{{ stock["SUM(shares)"] }}</td>
-      <td>{{ usd(stock["price"]) }}</td>
-      <td>{{ usd(stock["SUM(shares)"] * stock["price"]) }}</td>
+      <td>{{ transaction["symbol"].upper() }}</td>
+      <td>{{ transaction["type"] }}</td>
+      <td>{{ transaction["shares"] }}</td>
+      <td>{{ usd(tr["price"]) }}</td>
+      <td>{{ transaction["time"] }}</td>
     </tr>
     {% endfor %}
-    <tr>
-      <td>Cash</td>
-      <td colspan="3"></td>
-      <td>{{ usd(cash) }}</td>
-    </tr>
   </tbody>
-  <tfoot>
-    <td colspan="4"></td>
-    <td>{{ usd(total) }}</td>
-  </tfoot>
 </table>
 {% endblock %}
