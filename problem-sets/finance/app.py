@@ -41,7 +41,7 @@ def index():
 
     # Get users stocks
     stocks = db.execute(
-        "SELECT name, price, symbol, SUM(shares) FROM transactions WHERE user_ID = ? GROUP BY symbol",
+        "SELECT name, price, symbol, SUM(shares) FROM transactions WHERE user_id = ? GROUP BY symbol",
         user_id
     )
 
