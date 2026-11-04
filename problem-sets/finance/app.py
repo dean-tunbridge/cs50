@@ -281,7 +281,7 @@ def sell():
 
         # Get current amount of shares
         curr_shares = db.execute(
-            "SELECT shares FROM transactions WHERE user_id = ? AND symbol = ? GROUP BY symbol",
+            "SELECT SUM(shares) FROM transactions WHERE user_id = ? AND symbol = ? GROUP BY symbol",
             user_id,
             symbol
         )[0]["SUM(shares)"]
