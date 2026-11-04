@@ -301,7 +301,15 @@ def sell():
             "SELECT SUM(shares) FROM transactions WHERE user_id = ? AND symbol = ? GROUP BY symbol",
             user_id,
             symbol
-        )[0]["SUM(shares)"]
+        )   
+        # Check if user owns this stock
+        if not curr_shares:
+          return apology("You don't own this stock")
+        # If they do
+        curr_shares = curr_shares[0]["SUM(shares)"]
+        
+        if curr_shares <= 0:
+          return apology("You don't own this stock")
 
         # Check if user has enough shares to sell
         if curr_shares < shares:
