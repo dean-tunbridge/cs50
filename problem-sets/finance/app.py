@@ -60,7 +60,6 @@ def index():
 @login_required
 def buy():
     """Buy shares of stock"""
-
     if request.method == "POST":
 
         # Get stock symbol and convert to uppercase
@@ -75,15 +74,15 @@ def buy():
         elif not stock:
             return apology("Invalid Stock")
 
-        # Check that the share amount is a positive integer
-        if shares <= 0:
-            return apology("Share must be positive number")
-
         # Check share is an integer
         try:
             shares = int(request.form.get("shares"))
         except:
-            apology("Share must be a number")
+            return apology("Share must be a number")
+            
+        # Check that the share amount is a positive integer
+        if shares <= 0:
+            return apology("Share must be positive number")
 
         # Get user id
         user_id = session["user_id"]
