@@ -69,11 +69,11 @@ def buy():
         # Check for valid symbol or empty submit
         if not symbol:
             return apology("Please Enter a Stock")
-          
-        # Convert to uppercase after checking for valid symbol  
+
+        # Convert to uppercase after checking for valid symbol
         symbol = symbol.upper()
         stock = lookup(symbol)
-                  
+
         # Check for valid stock
         if not stock:
             return apology("Invalid Stock")
@@ -83,7 +83,7 @@ def buy():
             shares = int(request.form.get("shares"))
         except:
             return apology("Share must be a number")
-            
+
         # Check that the share amount is a positive integer
         if shares <= 0:
             return apology("Share must be positive number")
@@ -120,7 +120,7 @@ def buy():
                 "buy",
                 symbol
             )
-            
+
             return redirect("/")
 
     else:
@@ -136,6 +136,7 @@ def history():
     transactions = db.execute("SELECT type, symbol, price, shares, time FROM transactions WHERE user_id = ?", user_id)
 
     return render_template("history.html", transactions=transactions, usd=usd)
+
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
@@ -255,7 +256,7 @@ def register():
             return redirect('/')
 
         except:
-            return apology("Username already in use", 200)
+            return apology("Username already in use", 400)
 
     else:
         return render_template("register.html")
@@ -283,18 +284,18 @@ def sell():
         # Check if they have shares
         if shares <= 0:
             return apology("Share must be positive number")
-          
+
         # Get stock symbol and convert to uppercase
         symbol = request.form.get("symbol")
-        
+
         # Check for valid symbol or empty submit
         if not symbol:
             return apology("Please Enter a Stock")
-          
-        # Convert to uppercase after checking for valid symbol  
+
+        # Convert to uppercase after checking for valid symbol
         symbol = symbol.upper()
         stock = lookup(symbol)
-        
+
         # Check for valid stock
         if not stock:
             return apology("Invalid Stock")
@@ -310,13 +311,13 @@ def sell():
             "SELECT SUM(shares) FROM transactions WHERE user_id = ? AND symbol = ? GROUP BY symbol",
             user_id,
             symbol
-        )   
+        )
         # Check if user owns this stock
         if not curr_shares:
             return apology("You don't own this stock")
         # If they do
         curr_shares = curr_shares[0]["SUM(shares)"]
-        
+
         if curr_shares <= 0:
             return apology("You don't own this stock")
 
