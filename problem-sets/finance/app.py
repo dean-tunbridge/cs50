@@ -46,7 +46,7 @@ def index():
     )
 
     # Get users cash total
-    cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id[0]["cash"])
+    cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
 
     # Get total
     total = cash
