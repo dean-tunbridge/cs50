@@ -126,10 +126,10 @@ Introduction to web application development using Flask, a Python web framework.
 
 ### Problem set from Week 9:
 
--Birthdays
--Finance
+- Birthdays
+- Finance
 
-#### Languages used: <imgsrc="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/flask.png" alt="Flask" width="15"/><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/django.png" alt="Django" width="15"/>
+#### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/flask.png" alt="Flask" width="15"/><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/django.png" alt="Django" width="15"/>
 
 ## Resources
 
