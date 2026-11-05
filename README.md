@@ -129,7 +129,7 @@ Introduction to web application development using Flask, a Python web framework.
 -Birthdays
 -Finance
 
-#### Languages used: src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/flask.png" alt="Flask" width="15"/><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/django.png" alt="Django" width="15"/>
+#### Languages used: <imgsrc="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/flask.png" alt="Flask" width="15"/><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/django.png" alt="Django" width="15"/>
 
 ## Resources
 
