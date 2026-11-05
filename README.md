@@ -120,6 +120,17 @@ Introduction to web development, covering the internet, routers, TCP/IP, DNS, HT
 
 #### Languages used: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png" alt="HTML" width="16"/><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png" alt="CSS" width="16"/><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png" alt="JS" width="15"/>
 
+### week 9 - Flask
+
+Introduction to web application development using Flask, a Python web framework. Covers Flask applications, routes, decorators, HTTP requests and responses, templates, Jinja, sessions, and cookies. Explores how Python can be used alongside HTML, CSS, and JavaScript to create dynamic and interactive websites, manage user data, handle form submissions, and communicate between browsers and servers. The problem sets focus on building web applications, processing user input, managing user sessions, and working with databases to create functional websites.
+
+### Problem set from Week 9:
+
+-Birthdays
+-Finance
+
+#### Languages used: src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/flask.png" alt="Flask" width="15"/><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/django.png" alt="Django" width="15"/>
+
 ## Resources
 
 - [CS50x Official Course](https://cs50.harvard.edu/x/)
